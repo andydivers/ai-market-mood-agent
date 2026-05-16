@@ -1,4 +1,77 @@
 import streamlit as st
+
+# ============================================================
+# ИНЪЕКЦИЯ CSS – ПРЕВРАЩАЕТ STREAMLIT В СТИЛЬНЫЙ GLASSMORPHISM
+# ============================================================
+st.markdown("""
+<style>
+    /* Основной фон страницы */
+    .stApp {
+        background: radial-gradient(circle at 20% 20%, #1a1a2e, #0f0f1a);
+    }
+
+    /* Прозрачный хедер */
+    header[data-testid="stHeader"] {
+        background: transparent;
+        backdrop-filter: blur(10px);
+    }
+
+    /* Скрываем стандартный футер и меню */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+
+    /* Стили для всех кнопок */
+    .stButton > button {
+        background: linear-gradient(135deg, #6ee7ff, #b084ff);
+        color: #0a0f1f;
+        border: none;
+        border-radius: 50px;
+        padding: 0.7rem 2rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 15px rgba(110,231,255,0.3);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(110,231,255,0.5);
+    }
+
+    /* Стили для областей с сообщениями (success, warning) */
+    .stAlert {
+        border-radius: 12px;
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    /* Стилизация аудиоплеера */
+    .stAudio > div {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    /* Основной контейнер */
+    .block-container {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Стили для заголовков */
+    h1, h2, h3, p, div {
+        color: #e0e8ff !important;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        background: linear-gradient(135deg, #6ee7ff, #b084ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+</style>
+""", unsafe_allow_html=True)
+import streamlit as st
 import yfinance as yf
 from groq import Groq
 import datetime
