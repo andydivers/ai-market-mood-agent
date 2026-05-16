@@ -1,4 +1,11 @@
 import streamlit as st
+st.set_page_config(
+    page_title="AI Market Mood Agent",
+    page_icon="🎵",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+    locale="en"   # <-- это переключит интерфейс на английский
+)
 
 # ============================================================
 # ИНЪЕКЦИЯ CSS – ПРЕВРАЩАЕТ STREAMLIT В СТИЛЬНЫЙ GLASSMORPHISM
