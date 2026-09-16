@@ -76,7 +76,7 @@ Describe in one sentence what music genre and mood best fit the current market.
 Use only tags understandable by music generators (e.g., ambient, techno, lo-fi, dark, energetic).
 Reply strictly with one phrase, no extra text."""
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7,
         max_tokens=60

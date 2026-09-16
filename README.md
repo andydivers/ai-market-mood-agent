@@ -4,7 +4,7 @@ Autonomous AI agent that scans market volatility and generates the perfect sound
 
 ## Features
 - Real-time BTC & S&P 500 analysis via yfinance
-- AI mood detection using Groq LLaMA 3.3-70b
+- AI mood detection using Groq GPT-OSS 120B
 - Smart music selection (4 curated tracks)
 - Zero configuration, 100% free
 
