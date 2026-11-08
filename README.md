@@ -15,3 +15,9 @@ Autonomous AI agent that scans market volatility and generates the perfect sound
 - Streamlit (UI)
 - Groq (LLM inference)
 - yfinance (market data)
+
+## Landing
+
+`landing/` — статический лендинг проекта (moved from the separate Litebotpage repo,
+merged 2026-11-08): `index.html` + `wrangler.jsonc` (Cloudflare Pages, project name `litebotpage`).
+Deploy: `wrangler deploy` from `landing/` or Cloudflare Pages connected to this repo.

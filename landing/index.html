@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Market Mood Agent – Music for Traders</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: radial-gradient(circle at 20% 20%, #1a1a2e, #0f0f1a);
+            color: #e0e8ff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container { max-width: 800px; width: 100%; }
+        .glass-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 24px;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #6ee7ff, #b084ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #8892b0;
+            margin-bottom: 2.5rem;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #6ee7ff, #b084ff);
+            color: #0a0f1f;
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 1rem 0.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(110,231,255,0.3);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #6ee7ff;
+            color: #6ee7ff;
+        }
+        .features {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2.5rem 0 1rem;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 1.8rem 1.2rem;
+            flex: 1;
+            min-width: 180px;
+            backdrop-filter: blur(5px);
+        }
+        .feature-card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+        .feature-card p { color: #8892b0; }
+        footer {
+            margin-top: 2rem;
+            color: #5a6680;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <h1>🎵 AI Market Mood Agent</h1>
+            <p class="subtitle">Autonomous agent scans markets, computes global mood, and curates the perfect soundtrack — daily.</p>
+            <div>
+                <a href="https://ai-market-mood-agent-jcpqqwerbeymb25hwjwn99.streamlit.app/" class="btn" target="_blank">🚀 Try Live Demo</a>
+                <a href="https://github.com/andydivers/ai-market-mood-agent" class="btn btn-outline" target="_blank">📁 View on GitHub</a>
+            </div>
+            <div class="features">
+                <div class="feature-card"><h3>📊 Market Scan</h3><p>BTC & S&P 500 volatility via yfinance</p></div>
+                <div class="feature-card"><h3>🧠 AI Reasoning</h3><p>Llama 3.3 70B on Groq decides mood</p></div>
+                <div class="feature-card"><h3>🎹 Music Curator</h3><p>AI-picked track matched to sentiment</p></div>
+            </div>
+            <p style="color:#8892b0;">Built for <strong>a16z Speedrun</strong> · 100% free stack · Groq + yfinance + Streamlit</p>
+        </div>
+        <footer>© 2026 AI Market Mood Agent</footer>
+    </div>
+</body>
+</html>
